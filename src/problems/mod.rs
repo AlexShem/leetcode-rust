@@ -5,6 +5,7 @@ pub mod s1935_can_be_typed_words;
 pub mod s2180_count_even;
 pub mod s2946_are_similar;
 pub mod s3300_min_element;
+pub mod s3550_smallest_index;
 pub mod s3622_check_divisibility;
 pub mod s3736_min_moves;
 pub mod s3769_sort_by_reflection;
