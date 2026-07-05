@@ -2,14 +2,11 @@ pub struct Solution;
 
 impl Solution {
     pub fn sort_by_reflection(mut nums: Vec<i32>) -> Vec<i32> {
-        nums.sort_by(|a, b| {
-            let rev_a = Self::get_reflection(*a);
-            let rev_b = Self::get_reflection(*b);
-            (rev_a, a).cmp(&(rev_b, b))
-        });
+        nums.sort_by_key(|&n| ((n as u32).reverse_bits() >> n.leading_zeros(), n));
         nums
     }
 
+    #[allow(unused)]
     fn get_reflection(n: i32) -> i32 {
         let binary = format!("{:b}", n);
         let reversed = binary.chars().rev().collect::<String>();
