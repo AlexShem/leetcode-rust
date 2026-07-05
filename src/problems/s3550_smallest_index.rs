@@ -2,19 +2,15 @@ pub struct Solution;
 
 impl Solution {
     pub fn smallest_index(nums: Vec<i32>) -> i32 {
-        let search = nums.iter().enumerate().find(|(i, n)| {
-            let sum_of_digits = n
-                .to_string()
-                .chars()
-                .map(|d| d.to_digit(10).unwrap())
-                .sum::<u32>();
-            *i == sum_of_digits as usize
-        });
-
-        match search {
-            Some((i, _)) => i as i32,
-            None => -1,
-        }
+        nums.into_iter()
+            .enumerate()
+            .find(|&(i, n)| {
+                std::iter::successors(Some(n), |n| Some(n / 10))
+                    .map_while(|n| (n > 0).then_some(n % 10))
+                    .sum::<i32>()
+                    == i as i32
+            })
+            .map_or(-1, |(i, _)| i as i32)
     }
 }
 
