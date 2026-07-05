@@ -3,4 +3,5 @@ pub mod s0746_min_cost_climbing_stairs;
 pub mod s1913_max_product_difference;
 pub mod s1935_can_be_typed_words;
 pub mod s2946_are_similar;
+pub mod s3736_min_moves;
 pub mod s3769_sort_by_reflection;
