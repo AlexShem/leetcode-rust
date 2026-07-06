@@ -3,6 +3,7 @@ pub mod s0746_min_cost_climbing_stairs;
 pub mod s1913_max_product_difference;
 pub mod s1935_can_be_typed_words;
 pub mod s2180_count_even;
+pub mod s2269_divisor_substrings;
 pub mod s2946_are_similar;
 pub mod s3300_min_element;
 pub mod s3550_smallest_index;
