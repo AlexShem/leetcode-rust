@@ -6,6 +6,7 @@ pub mod s1935_can_be_typed_words;
 pub mod s2119_is_same_after_reversals;
 pub mod s2180_count_even;
 pub mod s2269_divisor_substrings;
+pub mod s2652_sum_of_multiples;
 pub mod s2806_account_balance_after_purchase;
 pub mod s2946_are_similar;
 pub mod s3300_min_element;
