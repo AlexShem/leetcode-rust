@@ -11,6 +11,7 @@ pub mod s2351_repeated_character;
 pub mod s2652_sum_of_multiples;
 pub mod s2806_account_balance_after_purchase;
 pub mod s2946_are_similar;
+pub mod s3005_max_frequency_elements;
 pub mod s3190_minimum_operations;
 pub mod s3300_min_element;
 pub mod s3550_smallest_index;
