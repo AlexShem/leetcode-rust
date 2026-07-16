@@ -4,6 +4,7 @@ pub mod s0389_find_the_difference;
 pub mod s0746_min_cost_climbing_stairs;
 pub mod s1913_max_product_difference;
 pub mod s1935_can_be_typed_words;
+pub mod s2053_kth_distinct;
 pub mod s2119_is_same_after_reversals;
 pub mod s2169_count_operations;
 pub mod s2180_count_even;
