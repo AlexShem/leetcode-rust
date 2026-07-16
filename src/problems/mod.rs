@@ -24,3 +24,4 @@ pub mod s3736_min_moves;
 pub mod s3750_minimum_flips;
 pub mod s3754_sum_and_multiply;
 pub mod s3769_sort_by_reflection;
+pub mod s3945_digit_frequency_score;
