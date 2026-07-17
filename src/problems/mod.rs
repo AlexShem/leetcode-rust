@@ -2,6 +2,7 @@ pub mod s0005_longest_palindrome;
 pub mod s0171_title_to_number;
 pub mod s0389_find_the_difference;
 pub mod s0746_min_cost_climbing_stairs;
+pub mod s0874_robot_sim;
 pub mod s0884_uncommon_from_sentences;
 pub mod s1913_max_product_difference;
 pub mod s1935_can_be_typed_words;
