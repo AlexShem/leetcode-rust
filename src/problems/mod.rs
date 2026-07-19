@@ -1,5 +1,6 @@
 pub mod s0005_longest_palindrome;
 pub mod s0171_title_to_number;
+pub mod s0219_contains_nearby_duplicate;
 pub mod s0389_find_the_difference;
 pub mod s0746_min_cost_climbing_stairs;
 pub mod s0874_robot_sim;
