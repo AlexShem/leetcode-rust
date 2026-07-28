@@ -34,7 +34,7 @@ impl Solution {
             })
             .collect();
 
-        vec![one, two].concat()
+        [one, two].concat()
     }
 }
 

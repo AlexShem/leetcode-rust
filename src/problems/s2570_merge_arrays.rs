@@ -6,7 +6,7 @@ impl Solution {
     pub fn merge_arrays(nums1: Vec<Vec<i32>>, nums2: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
         let mut output = nums1
             .into_iter()
-            .chain(nums2.into_iter())
+            .chain(nums2)
             .fold(HashMap::new(), |mut acc, pair| {
                 acc.entry(pair[0]).and_modify(|v| *v += pair[1]).or_insert(pair[1]);
                 acc

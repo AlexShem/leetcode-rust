@@ -4,7 +4,7 @@ impl Solution {
     pub fn min_element(nums: Vec<i32>) -> i32 {
         nums.iter()
             .map(|num| {
-                let mut n = num.clone();
+                let mut n = *num;
                 let mut reduced = 0;
                 while n > 0 {
                     reduced += n % 10;

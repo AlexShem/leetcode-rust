@@ -5,7 +5,7 @@ impl Solution {
         nums.sort();
         let n = nums.len();
         let (a, b, c, d) = (nums[0], nums[1], nums[n - 1], nums[n - 2]);
-        return c * d - a * b;
+        c * d - a * b
     }
 }
 

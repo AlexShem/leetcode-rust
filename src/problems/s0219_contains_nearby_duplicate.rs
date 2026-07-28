@@ -9,8 +9,8 @@ impl Solution {
         }
         let k = (k as usize).min(nums.len() - 1);
 
-        let (mut l, mut r) = (0usize, k as usize);
-        let mut set = HashSet::with_capacity(k as usize + 1);
+        let (mut l, mut r) = (0usize, k);
+        let mut set = HashSet::with_capacity(k + 1);
         for num in &nums[l..=r] {
             if !set.insert(num) {
                 return true;

@@ -4,7 +4,7 @@ impl Solution {
     pub fn check_divisibility(n: i32) -> bool {
         let digits = format!("{}", n)
             .chars()
-            .map(|d| i32::from_str_radix(&d.to_string(), 10).unwrap())
+            .map(|d| d.to_string().parse::<i32>().unwrap())
             .collect::<Vec<i32>>();
         let sum_of_digits = digits.iter().sum::<i32>();
         let product_of_digits = digits.iter().product::<i32>();

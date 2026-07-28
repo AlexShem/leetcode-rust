@@ -4,24 +4,24 @@ pub struct Solution;
 
 impl Solution {
     pub fn are_similar(mat: Vec<Vec<i32>>, k: i32) -> bool {
-        let (n, m) = (mat.len(), mat[0].len());
+        let m = mat[0].len();
         let k = (k as usize) % m;
         let mut modified = mat.clone();
 
         for _ in 0..k {
-            for row in 0..n {
+            for (row, item) in modified.iter_mut().enumerate() {
                 if row % 2 == 0 {
-                    let tmp = modified[row].clone();
+                    let tmp = item.clone();
                     let mut tmp = VecDeque::from(tmp);
                     let el = tmp.pop_front().unwrap();
                     tmp.push_back(el);
-                    modified[row] = Vec::from(tmp);
+                    *item = Vec::from(tmp);
                 } else {
-                    let tmp = modified[row].clone();
+                    let tmp = item.clone();
                     let mut tmp = VecDeque::from(tmp);
                     let el = tmp.pop_back().unwrap();
                     tmp.push_front(el);
-                    modified[row] = Vec::from(tmp);
+                    *item = Vec::from(tmp);
                 }
             }
         }
